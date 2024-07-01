@@ -12,9 +12,7 @@ taxSwitch.addEventListener("click", () => {
 const filterDivs = document.getElementsByClassName("filter");
 for (let filterDiv of filterDivs) {
   filterDiv.addEventListener("click", () => {
-    console.log("div is clicked");
     const category = filterDiv.getAttribute("data-category"); // Get the category from data-category attribute
-    console.log(category); // Just for testing, you can remove this line
     // Send a request using fetch API or XMLHttpRequest
     window.location.href = `/listings/category/${category}`;
   });
